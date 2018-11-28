@@ -1,15 +1,8 @@
 ﻿#include <iostream>
-#include <utility>
-#include <thread>
 #include <string>
-#include <chrono>
-#include <atomic>
-#include <memory>
 #include "bpromise/future.h"
 #include "bpromise/threadpool.h"
 #include "bpromise/sockets.h"
-
-using namespace std::chrono_literals;
 
 int main()
 {    
