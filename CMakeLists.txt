@@ -23,6 +23,9 @@ set(LIB_SOURCES
 add_library(bpromise STATIC ${LIB_SOURCES})
 target_include_directories(bpromise PUBLIC include/)
 
+find_package(Threads REQUIRED)
+target_link_libraries(bpromise Threads::Threads)
+
 if(WIN32)
   target_link_libraries(bpromise wsock32 ws2_32)
 endif()
