@@ -1,1 +1,3 @@
 # bpromise
+
+check examples/ directory
